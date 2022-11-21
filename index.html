@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> หัวข้อ </title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="src.js"></script>
 </head>
 <body>
     <div class="class1">
@@ -21,8 +23,6 @@
 
     <p>kon chang fun the best of thailand</p>
 
-    <img src="https://www.grandprix.co.th/wp-content/uploads/2021/07/Mitsubishi-Lancer-Evolution-X_1-660x400@2x.jpg" alt="lan_evo">
-
     <ol type="a">
         <li>order list 1</li>
         <li>order list 2</li>
@@ -33,7 +33,7 @@
         <li>unoder list 2</li>
     </ul>
 
-    <table>
+    <table class="tab">
         <thead>
             <tr>
                 <th>car</th>
@@ -60,5 +60,25 @@
         </tbody>
         <tfoot></tfoot>
     </table>
+
+    <form action="/sbmit.php" id="this_id">
+        <label for="uid">id here:</label>
+        <input type="text" name="" id="uid"> <br>
+        <label for="color">color here:</label>
+        <input type="color" name="" id="color"><br>
+        <label for="dadta_time">date time here:</label>
+        <input type="datetime-local" name="" id="data_time">
+
+    </form>
+    <div class="button_naja">
+        <button class="button_flex" id="btn-1" onclick="btnAlert('hello')">hello</button>
+        <button class="button_flex" id="btn-2" onclick="btnAlert('world')">world</button>
+        <button class="button_flex" id="btn-3" onclick="btnAlert('cup')">cup</button>
+    </div>
+    <script>
+        function btnAlert(text){
+            alert("you select "+text);
+        }
+    </script>
 </body>
 </html>
